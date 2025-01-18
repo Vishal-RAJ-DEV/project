@@ -1,0 +1,116 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:110vh;
+    background-color: #faf8f8;
+}
+
+/* Product Card Styles */
+.main-division {
+    display: flex;
+    width: 1000px;
+    padding: 100px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Image Section */
+.image{
+    flex:1;
+    background-color: #fdf9f9;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content: baseline;
+    margin-top: 15px;
+}
+
+.galgotias-img img{
+    
+    width: 230px;
+    height: 95px;
+    border-radius: 5%;
+
+    
+}
+.technojam-img img{
+    width: 230px;
+    height: 240px;
+    border-radius: 5%;
+
+}
+/* Details Section */
+.second-division{
+    flex: 2;
+    padding: 1px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+/* Text Styles */
+.title{
+    font-size: 15px;
+    color: #f6a6a6ec;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.club-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #9b4545;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.club-detail {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.Domain {
+    font-size: 14px;
+    color:rgba(49, 12, 4, 0.834);
+    letter-spacing: 2px;
+    margin-bottom: 1%;
+}
+.domain1 {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 0%;
+    
+
+}
+.link{
+    display: flex;
+    justify-content:right;
+    align-items:center;
+    gap: 8px;
+    margin-right: 1%;
+}
+.instagram img{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 2%;
+
+
+}
+.linkedin img{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20%;
+
+
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rye", serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(64, 62, 62));
+}
+
+.calculator {
+
+    border: 2px solid white;
+    padding: 20px;
+    box-shadow: 0px 3px 15px rgb(114, 110, 110);
+    background: transparent;
+    border-radius: 20px;
+
+
+
+}
+
+input {
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    border: none;
+    text-align: right;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    
+
+}
+input::placeholder{
+    color: white;
+    font-size: 30px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+    color: #ffff;
+    cursor: pointer;
+    box-shadow: -8px -8px 15px rgb(114, 110, 110, 0.1);
+    font-size: 20px;
+
+
+}
+.equal{
+    background-color: orangered;
+}
+.operator{
+    color: green;
+}

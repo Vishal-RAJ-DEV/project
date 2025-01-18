@@ -1,0 +1,468 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    color: white;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #2d56f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px;
+    max-height:70px ;
+    flex-wrap: wrap;
+    
+    
+}
+
+.navbar .links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: font-size 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+    font-size: 19px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .buttons a {
+    background-color: #031e41;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.content {
+    display: flex;
+    background: linear-gradient(to bottom, #2d56f9, #0e63e2, #a1c4fd);;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: calc(100vh - 80px);
+    padding: 0 15%;
+}
+
+.content h1 {
+    font-size: clamp(32px, 5vw, 64px); /* Responsive scaling */
+    margin: 0;
+}
+
+.content h1 span {
+    font-weight: 600;
+    color: #031e41;
+}
+
+.content p {
+    font-size: clamp(16px, 2vw, 20px);
+    margin: 20px 0 0;
+}
+
+.content .btn {
+    background-color: #07244a;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.doctor-image {
+    height: 300px;
+    position: absolute;
+    bottom: 111px;
+    right: 50px;
+    max-width: 300px;
+}
+
+.work-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: #4778c2;
+    padding: 20px 0;
+}
+
+.open-hour,
+.book-apn,
+.Find-doc,
+.Services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    width: 235px;
+    background: white;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.open-hour {
+    background: linear-gradient(to bottom, rgb(47, 62, 165), rgb(11, 2, 77));
+    color: white;
+}
+
+.btn2 {
+    background-color: #07244a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+
+/* For Tablets (1024px and below) */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .content {
+        align-items:center;
+    }
+
+    .doctor-image {
+        position: static;
+        margin: 0 auto 30px;
+        max-width: 250px;
+    }
+
+    .work-detail {
+        gap: 25px;
+    }
+
+    .img-doc img{
+        height: 300px;
+        width: 200px;
+    }
+    .dental-disp h1{
+        margin: 5px 0px
+    }
+    .dental-disp .p3{
+        font-size: 15px;
+
+    }
+
+    .open-hour,
+    .book-apn,
+    .Find-doc,
+    .Services {
+        height: auto;
+        width: 220px;
+    }
+    .AI-health-Assist{
+        margin-top: 40px;
+    }
+
+}
+
+/* For Mobile Devices (768px and below) */
+@media (max-width: 768px) {
+    .navbar {
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+    }
+
+    .content{
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .doctor-image {
+        margin: 0 auto;
+        max-width: 200px;
+    
+    }
+
+    .work-detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .open-hour,
+    .book-apn,
+    .Find-doc,
+    .Services {
+        width: 63%;
+    }
+    .doc-panel{
+        gap: 22px;
+    }
+}
+
+/* For Small Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    .content{
+        justify-content:center; 
+        gap: 20px;
+    }
+    .navbar .logo {
+        font-size: 20px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .btn,
+    .btn2 {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .doctor-image {
+        max-width: 150px;
+    }
+
+    .open-hour,
+    .book-apn,
+    .Find-doc,
+    .Services {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.med-services{
+    background-color:rgb(255, 252, 252);
+    color: black;
+    height:20vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+    text-align: center;
+    justify-content: center;
+    max-width: 100%;
+    margin-bottom: 0;
+}
+.med-services h1{
+    margin: 5px 0 10px ;
+    font-size: 50px;
+
+}
+.med-services p{
+    margin: 0;
+    color: #0e57b6;
+    font-size: 30px;
+}
+
+.dental-care{
+    background-color:rgb(255, 255, 255);
+    color: black;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 30px;
+    
+}
+
+.dental-disp{
+    display: flex;
+    flex-direction:column;
+    width: 40%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+
+}
+.dental-disp p{
+    font-size: 20px;
+    
+}
+.AI-health-Assist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 90px;
+    background-color: white;
+    padding: 20px 0;
+}
+.precaution,
+.diet,
+.Exercise{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    width: 188px;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding: 10px;
+
+}
+
+.AI-health-Assist h3{
+    font-size: 22px;
+    color: #053c81;
+}
+
+.btn4{
+     background-color: #053c81;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.online-appn{
+    background:#07244a;
+    color: white;
+    height: 386px;
+    margin: 20px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.onl{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    
+
+
+}
+.onl .apn{
+    font-size: 50px;
+    margin: 0 0 10px;
+}
+.onl p{
+  font-size: 17px;  
+}
+
+.btn3{
+    background-color: #fff;
+    color: #031e41;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.doctors{
+    color: black;
+    text-align: center;
+    height: 500px;
+    padding: 40px 10px;
+}
+.doctors h1{
+    font-size: 4rem;
+    font-weight: 500;
+    margin: 0 10px 39px;
+}
+.doc-panel{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    
+
+
+
+}
+.doctor-sec{
+    background:linear-gradient(to bottom , rgb(66, 101, 239)
+    , rgb(5, 30, 121));
+    color: white;
+    height: 270px;
+    width: 200px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    
+}
+.image{
+    background:linear-gradient(to bottom , rgb(96, 126, 243)
+    , rgb(1, 22, 60));
+    border-radius: 10px;
+    height: 80%;
+}
+
+
+.edit1{
+    width: 80%;
+    height: 79%;
+    border-radius: 10px;
+    position: absolute;
+    right: 24px;
+    bottom: 74px;
+    
+    
+
+
+}
+.doctor-sec p{
+    font-size: 20px;
+    line-height: 10px;
+
+}
+.edit{
+    height: 85%;
+    border-radius: 10px;
+    position: absolute;
+    right: 34px;
+    bottom: 74px;
+    width: 80%;
+
+    
+}
+

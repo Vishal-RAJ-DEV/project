@@ -1,0 +1,75 @@
+*{
+    box-sizing: content-box;
+}
+
+header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: #e87a7a;
+    padding: 15px;
+    color: rgb(219, 215, 214);
+}
+
+body{
+    margin: 0px;
+}
+nav{
+    display:flex;
+    background-color: rgb(68, 66, 63);
+}
+nav a{
+    display:block;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 14px 20px;
+    float: left; /*to make content in left flow*/
+
+}
+
+.in-left{
+    margin-left:auto
+}
+
+section{
+    display: block;
+    text-align: center;
+    padding: 10px;
+
+    
+    
+    
+
+}
+section h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.hover:hover{
+    background-color: white;
+    color: black;
+}
+@media screen and (max-width: 700px){  /*700 means after 700px screen size the below style will applied*/
+    nav{
+        flex-direction: column;
+        padding:10px 0px;
+        
+    }
+    .in-left{
+        margin-left: 0;
+    }
+    nav a{
+        text-align: center;
+    }
+}
+section span{
+    background-color: #912626;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+video{
+    margin: 0px 15px 0px 15px;
+
+
+}
+    
